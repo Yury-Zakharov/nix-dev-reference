@@ -10,8 +10,9 @@ pkgs.mkShell {
   ];
 
   shellHook = ''
+    export DOTNET_ROOT=${pkgs.dotnet-sdk_8}
     export DOTNET_CLI_TELEMETRY_OPTOUT=1
     export DOTNET_NOLOGO=1
-    echo "Entered dotnet-example devShell (SDK 8)"
+    echo ">> .NET SDK: $(dotnet --version)"
   '';
 }
