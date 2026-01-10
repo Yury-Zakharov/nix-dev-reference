@@ -11,10 +11,7 @@ fi
 case "$MODE" in
   analyze)
     echo "== Gemini: structural analysis =="
-    gemini chat <<'EOF'
-Analyze the repository structure, key modules, and architectural intent.
-Focus on relationships, not implementation details.
-EOF
+    gemini chat < agents/prompts/gemini-analyze.md
     ;;
   design)
     echo "== Gemini: problem framing =="
