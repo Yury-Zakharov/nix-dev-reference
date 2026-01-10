@@ -52,3 +52,17 @@ This separation minimizes entropy while preserving:
 - Convenience
 - Reproducibility
 - Clear teardown paths
+
+
+## Claude vs Gemini (explicit contrast)
+
+| Aspect | Claude | Gemini |
+|------|------|------|
+| Auth type | API key | OAuth |
+| Secret ownership | User | Tool |
+| Storage | `pass` | `~/.gemini` |
+| Injection | `direnv` | None |
+| Re-auth frequency | Never | Rare |
+| Declarative | Partially | No |
+
+This asymmetry is intentional and reflects the upstream tooling models.
