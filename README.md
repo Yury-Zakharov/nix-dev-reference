@@ -8,3 +8,11 @@ A public, opinionated reference repository for:
 - Secret handling via pass + direnv
 
 This repository contains **patterns**, not personal data.
+
+### Agent diagnostics
+
+Before running agent workflows:
+
+```bash
+scripts/agent-doctor.sh
+```
